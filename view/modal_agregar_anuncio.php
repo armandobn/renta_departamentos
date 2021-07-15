@@ -21,8 +21,8 @@
           </div>
           <div class="form-floating mb-3">
             <select class="form-select" id="regis_tipo" name="regis_tipo" aria-label="Floating label select example">
-              <option value="1">Casa</option>
-              <option value="2">Cuarto</option>
+              <option>Casa</option>
+              <option>Cuarto</option>
             </select>
             <label for="regis_tipo">Ingresar Tipo(Casa/Cuarto)</label>
           </div>

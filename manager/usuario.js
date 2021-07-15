@@ -13,7 +13,7 @@ function precarga_anuncio(id) {
       $('#update_titulo').val(datos_precarga['titulo']);
       $('#update_precio').val(datos_precarga['precio']);
       $('#update_tipo').val(datos_precarga['tipo']);
-      //console.log(datos_precarga['tipo']);
+      console.log(datos_precarga['tipo']);
       servicio = datos_precarga['servicios'];
       $('#update_descripcion').val(datos_precarga['descripcion']);
       $('#update_status').val(datos_precarga['status']);
@@ -261,6 +261,11 @@ $(document).ready(function () {
       return false;
     }
  
+    capturado = fileValidation();
+    if (capturado == false) {
+      alerta('Error!', 'Solo Imegenes con extencion .jpeg/.jpg/.png/.gif', 'error');
+      return false;
+    }
 
     capturado = validar_coordenada($('#regis_latitud').val());
     if (capturado == null) {

@@ -55,5 +55,17 @@ function validar_coordenada(coordenada){
   return valor;
 }
 
+function fileValidation(){
+  var fileInput = document.getElementById('regis_imagen');
+  var filePath = fileInput.value;
+  var allowedExtensions = /(.jpg|.jpeg|.png)$/i;
+  if(!allowedExtensions.exec(filePath)){
+    fileInput.value = '';
+    return false;
+  }else{
+    return true;
+  }
+}
+
 
 
