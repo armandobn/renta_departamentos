@@ -14,9 +14,7 @@ create table usuario_venta(
   id int not null auto_increment primary key,
   usuario varchar(255),
   telefono varchar (255),
-  terminos boolean,
-  premium varchar(255),
-  premium_restante date
+  terminos boolean
 );
 
 
@@ -39,6 +37,5 @@ create table renta_tiempo(
   id int not null primary key,
   propietario varchar(255),
   usuario varchar(255),
-  costo_mes varchar(255),
-  tiempo_restante date
+  costo_mes varchar(255)
 )
