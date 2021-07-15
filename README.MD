@@ -1,6 +1,6 @@
-#Pagina de Rentas
+# Pagina de Rentas
 
-###Tegnologias manejadas
+### Tegnologias manejadas
 * HTML5
 * CSS3
 * PHP
@@ -12,10 +12,10 @@
 * FONTAWESOME
 * API GOOGLE MAPS
 
-###Requerimientos
+### Requerimientos
 1. Debes tener XAMPP instalado
 
-###Pasos
+### Pasos
 1. Descargar el repositorio
 2. Descomprimir el zip
 3. Pasar a la carpeta htdocs que se encuentra dentro de Xampp
