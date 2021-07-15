@@ -1,0 +1,116 @@
+body {
+  background: url("../img/pattern.png");
+}
+
+hr{
+	border: none; 
+	height: 2px; /* Set the hr color */ 
+	color: #333; /* old IE */ 
+	background-color: #333; /* Modern Browsers */
+}
+
+.fondoimg {
+	background: url("../img/pxgray.png");
+}
+
+.fondoimgpaven {
+	background: url("../img/paven.png");
+}
+
+
+
+/*Iamgen supoeruesta*/
+.figure {
+  background: #1988a4;
+  display: grid;
+  grid-template-areas: 'soloyo';
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  max-width: 90%;
+  overflow: hidden;
+	margin-top: 15px;
+}
+.imgen {
+  grid-area: soloyo;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.figcaption {
+ 
+  grid-area: soloyo;
+  width: 100%;
+  align-self: end;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+	text-align: right;
+  font-size: calc(.5rem + 1vmax + 2vmin);
+  line-height: 1;
+  font-variant: small-caps;
+}
+.icon{	
+	font-size: 310%;
+	
+}
+
+.logo{
+	
+  animation-name: rotate-gear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.titulo:hover .logo {
+  animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+
+.barra ul li a:hover {
+  color: #37bcf9;
+  transform: scale(1.2, 1.2);
+}
+
+
+
+
+#map {
+	height: 500px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.fondo {
+	width: 100%;
+	max-width: 370px;
+	height: 100%;
+	max-height: 235px;
+}
