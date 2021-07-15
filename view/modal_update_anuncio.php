@@ -77,6 +77,13 @@
               placeholder="name@example.com">
             <label for="update_longitud">Ingresar Longitud</label>
           </div>
+          <div class="form-group">
+            <label for="update_estatus">Status</label>
+            <select class="form-control" name="update_estatus" id="update_estatus">
+              <option>sin rentar</option>
+              <option>rentado</option>
+            </select>
+          </div>
         </form>
       </div>
       <div class="modal-footer">

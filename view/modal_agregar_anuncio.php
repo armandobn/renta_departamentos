@@ -20,7 +20,7 @@
             <label for="regis_precio">Ingresar Precio</label>
           </div>
           <div class="form-floating mb-3">
-            <select class="form-select" id="regis_tipo" aria-label="Floating label select example">
+            <select class="form-select" id="regis_tipo" name="regis_tipo" aria-label="Floating label select example">
               <option value="1">Casa</option>
               <option value="2">Cuarto</option>
             </select>
@@ -52,7 +52,7 @@
           </div>
           <div class="mb-3">
             <label for="regis_imagen" class="form-label">Ingresa una Imagen</label>
-            <input class="form-control" type="file" REQUIRED name="regis_imagen" id="regis_imagen">
+            <input class="form-control" type="file" REQUIRED name="regis_imagen" id="regis_imagen" placeholder="Ingresar Imagen">
           </div>
           <div class="mb-3">
             <label for=""><strong>Ubicacion del Departamento/Casa</strong></label>

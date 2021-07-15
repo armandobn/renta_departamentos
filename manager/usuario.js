@@ -260,6 +260,7 @@ $(document).ready(function () {
       + capturado, 'error');
       return false;
     }
+ 
 
     capturado = validar_coordenada($('#regis_latitud').val());
     if (capturado == null) {
@@ -289,15 +290,16 @@ $(document).ready(function () {
       contentType: false,
       processData: false,
       success: function (r) {
+        // console.log(r);
         if (r == 1) {
-          //console.log(r);
+          console.log(r);
           $('#form_agregar_anuncio')[0].reset();
           mostrar_anuncio_usuario();
           alerta('Perfecto!', 'Registrado', 'success');
           //window.location="usuario";
           return false;
         } else {
-          //console.log(r);
+          // console.log(r);
           alerta('Error!', 'Algo Salio mal', 'error');
           return false;
         }

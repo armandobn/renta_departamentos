@@ -54,3 +54,6 @@ function validar_coordenada(coordenada){
   //console.log(valor);
   return valor;
 }
+
+
+
