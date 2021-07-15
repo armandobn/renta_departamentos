@@ -13,7 +13,7 @@ function precarga_anuncio(id) {
       $('#update_titulo').val(datos_precarga['titulo']);
       $('#update_precio').val(datos_precarga['precio']);
       $('#update_tipo').val(datos_precarga['tipo']);
-      console.log(datos_precarga['tipo']);
+      //console.log(datos_precarga['tipo']);
       servicio = datos_precarga['servicios'];
       $('#update_descripcion').val(datos_precarga['descripcion']);
       $('#update_status').val(datos_precarga['status']);
@@ -84,6 +84,20 @@ function actualiza_anuncio() {
      return false;
    }
 
+  
+  let imagen = $('#update_imagen').val();
+  //console.log(imagen);
+  if(imagen ==""){
+
+  }else{
+    capturado = fileValidation_update();
+    if (capturado == false) {
+      alerta('Error!', 'Solo Imegenes con extencion .jpeg/.jpg/.png/.gif', 'error');
+      return false;
+    }
+  }
+  
+  
   capturado = validar_coordenada($('#update_latitud').val());
   if (capturado == null) {
     alerta('Error!', 'En Latitud no es una coordinada valida', 'error');

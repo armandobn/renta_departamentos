@@ -67,5 +67,16 @@ function fileValidation(){
   }
 }
 
+function fileValidation_update(){
+  var fileInput = document.getElementById('update_imagen');
+  var filePath = fileInput.value;
+  var allowedExtensions = /(.jpg|.jpeg|.png)$/i;
+  if(!allowedExtensions.exec(filePath)){
+    fileInput.value = '';
+    return false;
+  }else{
+    return true;
+  }
+}
 
 
