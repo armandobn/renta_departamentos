@@ -20,7 +20,7 @@
 2. Descomprimir el zip
 3. Pasar a la carpeta htdocs que se encuentra dentro de Xampp
 4. En la carpeta **schema** encontraras un sql que contiene el codigo para crear la BD utilizada
-5. Configurar dentro de la carpeta App el archivo config.php deacuerdo a tu url en la que llammas al proyecto
+5. Configurar dentro de la carpeta App el  archivo config.php deacuerdo a tu url en la que llammas al proyecto
 6. Ya puedes utilizar el proyecto
 
 ### Funcionamiento
