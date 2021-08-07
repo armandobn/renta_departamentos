@@ -15,7 +15,6 @@
     <a href="control/logout.php" class="btn btn-success ms-3"><i class="far fa-user"></i> Cerrar Sesion</a>
     ';
   }
-
 ?>
   
 
